@@ -1,4 +1,6 @@
-To customize options for users in Java, specifically using JOptionPane, we can utilize the showOptionDialog() method. 
+1. If users click "Cancel," 'option' becomes 2, not matching the expected value of 1 for 'JOptionPane.YES_OPTION'. Consequently, the program displays the "No" message as if users had chosen 'No'.
+
+2. To customize options for users in Java, specifically using JOptionPane, we can utilize the showOptionDialog() method. 
 This method allows you to create a dialog box with custom options based on your requirements.
 
 // With "Yes" and "No"
