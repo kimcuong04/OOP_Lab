@@ -1,0 +1,34 @@
+To customize options for users in Java, specifically using JOptionPane, we can utilize the showOptionDialog() method. 
+This method allows you to create a dialog box with custom options based on your requirements.
+
+// With "Yes" and "No"
+import javax.swing.JOptionPane;
+
+public class CustomOptionsDialog {
+    public static void main(String[] args) {
+        int option = JOptionPane.showOptionDialog(
+            null,
+            "Do you want to proceed?", 
+            "Confirmation",
+            JOptionPane.YES_NO_OPTION,
+            JOptionPane.QUESTION_MESSAGE,
+            null, 
+            new String[]{"Yes", "No"}, // Custom options 
+            "Yes" // Default opt
+        );
+
+// With "I do" and "I don't"
+import javax.swing.JOptionPane;
+
+public class CustomOptionsDialog {
+    public static void main(String[] args) {
+        int option = JOptionPane.showOptionDialog(
+            null,
+            "Do you agree?",
+            "Confirmation", 
+            JOptionPane.YES_NO_OPTION, 
+            JOptionPane.QUESTION_MESSAGE,
+            null, 
+            new String[]{"I do", "I don't"}, // Custom options
+            "I do" // Default opt
+        );
